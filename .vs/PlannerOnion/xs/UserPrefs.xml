@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{2D7D63B6-A3AA-4618-AE35-3EC34C08D5C4}|Default">
+  <MonoDevelop.Ide.ItemProperties.PlannerOnion FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PlannerOnion/Startup.cs">
+    <Files>
+      <File FileName="Domain/WorkItem.cs" Line="11" Column="1" />
+      <File FileName="Application/Interfaces/EmptyClass.cs" Line="13" Column="2" />
+      <File FileName="Application/DependencyInjection.cs" Line="16" Column="1" />
+      <File FileName="PlannerOnion/Startup.cs" Line="31" Column="26" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PlannerOnion" expanded="True">
+            <Node name="Application" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+            </Node>
+            <Node name="Domain" expanded="True" />
+            <Node name="PlannerOnion" expanded="True">
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
