@@ -1,0 +1,17 @@
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/bin/Debug/net5.0/Persistence.deps.json
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/bin/Debug/net5.0/Persistence.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/bin/Debug/net5.0/ref/Persistence.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/bin/Debug/net5.0/Persistence.pdb
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/bin/Debug/net5.0/Application.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/bin/Debug/net5.0/Domain.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/bin/Debug/net5.0/Application.pdb
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/bin/Debug/net5.0/Domain.pdb
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/obj/Debug/net5.0/Persistence.csproj.AssemblyReference.cache
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/obj/Debug/net5.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/obj/Debug/net5.0/Persistence.AssemblyInfoInputs.cache
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/obj/Debug/net5.0/Persistence.AssemblyInfo.cs
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/obj/Debug/net5.0/Persistence.csproj.CoreCompileInputs.cache
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/obj/Debug/net5.0/Persistence.csproj.CopyComplete
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/obj/Debug/net5.0/Persistence.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/obj/Debug/net5.0/ref/Persistence.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/obj/Debug/net5.0/Persistence.pdb

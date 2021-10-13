@@ -4,14 +4,100 @@
     "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/Persistence.csproj": {}
   },
   "projects": {
-    "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/Persistence.csproj": {
+    "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/Persistence.csproj",
-        "projectName": "Persistence",
-        "projectPath": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/Persistence.csproj",
+        "projectUniqueName": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Application/Application.csproj",
         "packagesPath": "/Users/vntruong/.nuget/packages/",
-        "outputPath": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/obj/",
+        "outputPath": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vntruong/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/Domain.csproj": {
+                "projectPath": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/Domain.csproj",
+        "packagesPath": "/Users/vntruong/.nuget/packages/",
+        "outputPath": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vntruong/.config/NuGet/NuGet.Config"
@@ -38,6 +124,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -46,9 +140,95 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/Persistence.csproj",
+        "packagesPath": "/Users/vntruong/.nuget/packages/",
+        "outputPath": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vntruong/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Application/Application.csproj": {
+                "projectPath": "/Users/vntruong/Documents/Visual Studio/PlannerOnion/Application/Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

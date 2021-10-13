@@ -1,6 +1,5 @@
-﻿using System;
+﻿using System.Reflection;
 using MediatR;
-using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Application

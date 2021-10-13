@@ -1,0 +1,12 @@
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/bin/Debug/net5.0/Domain.deps.json
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/bin/Debug/net5.0/Domain.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/bin/Debug/net5.0/ref/Domain.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/bin/Debug/net5.0/Domain.pdb
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/obj/Debug/net5.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/obj/Debug/net5.0/Domain.AssemblyInfoInputs.cache
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/obj/Debug/net5.0/Domain.AssemblyInfo.cs
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/obj/Debug/net5.0/Domain.csproj.CoreCompileInputs.cache
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/obj/Debug/net5.0/Domain.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/obj/Debug/net5.0/ref/Domain.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/obj/Debug/net5.0/Domain.pdb
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/Domain/obj/Debug/net5.0/Domain.csproj.AssemblyReference.cache
