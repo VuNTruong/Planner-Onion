@@ -1,13 +1,13 @@
 ﻿using Application.Features.WorkItemFeatures;
 using AutoMapper;
 using Domain.Entities;
-using Domain.ViewModels;
+using PlannerOnion.ViewModels;
 
 namespace PlannerOnion.MappingConfig
 {
-    public class UserMappingConfig : Profile
+    public class WorkItemMappingConfig : Profile
     {
-        public UserMappingConfig()
+        public WorkItemMappingConfig()
         {
             CreateMap<WorkItem, WorkItemViewModel>();
             CreateMap<WorkItemViewModel, CreateNewWorkItem>();

@@ -16,6 +16,8 @@
     <None Remove="Newtonsoft.Json" />
     <None Remove="MappingConfig\" />
     <None Remove="Microsoft.AspNetCore.Identity" />
+    <None Remove="ViewModels\" />
+    <None Remove="MailKit" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="9.0.0" />
@@ -23,11 +25,13 @@
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="MailKit" Version="2.15.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\v1\" />
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Persistence\Persistence.csproj" />
     <Folder Include="MappingConfig\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>

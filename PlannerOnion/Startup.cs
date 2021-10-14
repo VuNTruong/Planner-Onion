@@ -1,16 +1,16 @@
 ﻿using System.Reflection;
 using Application;
-using Application.Context;
+using Application.Services;
 using Domain.Entities;
-using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Persistence;
+using Persistence.Context;
 
 namespace PlannerOnion
 {
@@ -34,9 +34,6 @@ namespace PlannerOnion
 
             services.AddControllers();
 
-            //// Inject MediatR into our app to communicate between layers
-            services.AddMediatR(Assembly.GetExecutingAssembly());
-
             services.AddDbContext<ApplicationDbContext>(options =>
             {
                 // Get connection string
@@ -45,6 +42,16 @@ namespace PlannerOnion
                 // Establish connection
                 options.UseSqlServer(connectionString).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
+
+            // Use authentication and authorization
+            services.AddAuthentication();
+            services.AddAuthorization();
+
+            // Add options for mail sending
+            services.AddOptions();
+            var mailsettings = Configuration.GetSection("MailSettings");
+            services.Configure<MailSettings>(mailsettings);
+            services.AddTransient<IEmailSender, SendMailService>();
 
             services.AddAutoMapper(typeof(Startup));
         }
@@ -61,6 +68,9 @@ namespace PlannerOnion
 
             app.UseRouting();
 
+            // Add authentication and authorization
+            // authentication MUST BE placed before authorization
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

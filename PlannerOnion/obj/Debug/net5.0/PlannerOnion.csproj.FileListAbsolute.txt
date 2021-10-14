@@ -68,3 +68,11 @@
 /Users/vntruong/Documents/Visual Studio/PlannerOnion/PlannerOnion/obj/Debug/net5.0/ref/PlannerOnion.dll
 /Users/vntruong/Documents/Visual Studio/PlannerOnion/PlannerOnion/obj/Debug/net5.0/PlannerOnion.pdb
 /Users/vntruong/Documents/Visual Studio/PlannerOnion/PlannerOnion/obj/Debug/net5.0/PlannerOnion.genruntimeconfig.cache
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/PlannerOnion/bin/Debug/net5.0/PlannerOnion.StaticWebAssets.xml
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/PlannerOnion/bin/Debug/net5.0/MailKit.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/PlannerOnion/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/PlannerOnion/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.UI.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/PlannerOnion/bin/Debug/net5.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/PlannerOnion/bin/Debug/net5.0/MimeKit.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/PlannerOnion/bin/Debug/net5.0/BouncyCastle.Crypto.dll
+/Users/vntruong/Documents/Visual Studio/PlannerOnion/PlannerOnion/obj/Debug/net5.0/PlannerOnion.MvcApplicationPartsAssemblyInfo.cs

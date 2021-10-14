@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Domain.ViewModels
+namespace PlannerOnion.ViewModels
 {
     public class WorkItemViewModel
     {

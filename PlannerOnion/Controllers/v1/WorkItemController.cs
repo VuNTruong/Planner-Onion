@@ -1,25 +1,35 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Application.Features.WorkItemFeatures;
+using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
-using Domain.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using PlannerOnion.ViewModels;
 
 namespace PlannerOnion.Controllers.v1
 {
+    [Authorize]
     public class WorkItemController : BaseApiController
     {
         // Auto mapper
         private IMapper _mapper;
 
-        public WorkItemController(IMapper mapper)
+        // Current user service
+        private ICurrentUser _currentUserService;
+
+        public WorkItemController(IMapper mapper, ICurrentUser currentUserService)
         {
             // Initialize auto mapper
             _mapper = mapper;
+
+            // Initialize current user service
+            _currentUserService = currentUserService;
         }
 
         // The function to get all work items
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<JsonResult> GetAll()
         {
@@ -27,7 +37,31 @@ namespace PlannerOnion.Controllers.v1
             var responseData = new Dictionary<string, object>();
 
             // Call the function to get list of work items
-            List<WorkItem> workItems = (List<WorkItem>)await Mediator.Send(new GetAllWorkItems());
+            List<WorkItem> workItems = (List<WorkItem>)await Mediator.Send(new GetAllWorkItems(0));
+
+            // Map list of work items into list of work item view models
+            List<WorkItemViewModel> workItemViewModels = _mapper.Map<List<WorkItemViewModel>>(workItems);
+
+            // Add data to the response data
+            responseData.Add("status", "Done");
+            responseData.Add("data", workItemViewModels);
+
+            // Return response to the client
+            return new JsonResult(responseData);
+        }
+
+        // The function to get work items created by the currently logged in user
+        [HttpGet("GetWorkItems")]
+        public async Task<JsonResult> GetWorkItemsByCurrentUser()
+        {
+            // Response data for the client
+            var responseData = new Dictionary<string, object>();
+
+            // Call the function to get user id of the currently logged in user
+            int currentUserId = await _currentUserService.GetCurrentUserId();
+
+            // Call the function to get list of work items created by the currently logged in user
+            List<WorkItem> workItems = (List<WorkItem>)await Mediator.Send(new GetAllWorkItems(currentUserId));
 
             // Map list of work items into list of work item view models
             List<WorkItemViewModel> workItemViewModels = _mapper.Map<List<WorkItemViewModel>>(workItems);

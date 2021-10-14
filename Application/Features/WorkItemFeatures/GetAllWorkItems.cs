@@ -5,37 +5,54 @@ using System.Threading.Tasks;
 using System.Threading;
 using Application.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace Application.Features.WorkItemFeatures
 {
     public class GetAllWorkItems : IRequest<IEnumerable<WorkItem>>
     {
+        // User id to get work items for
+        private int userIdToGetWorkItem;
+
+        // Constructor
+        public GetAllWorkItems(int userId)
+        {
+            userIdToGetWorkItem = userId;
+        }
+
         public class GetAllWorkItemsHandler : IRequestHandler<GetAllWorkItems, IEnumerable<WorkItem>>
         {
             // The database context
-            private readonly IApplicationDbContext _context;
+            private readonly IApplicationDbContext _databaseContext;
 
+            // Constructor
             public GetAllWorkItemsHandler (IApplicationDbContext context)
             {
                 // Initialize database context which is injected via DI
-                _context = context;
+                _databaseContext = context;
             }
 
             public async Task<IEnumerable<WorkItem>> Handle(GetAllWorkItems request, CancellationToken cancellationToken)
             {
-                // Get list of work items from the table
-                var workItemList = await _context.WorkItems
-                    .Include(workItem => workItem.Creator)
-                    .ToListAsync();
+                // List of work items
+                List<WorkItem> workItems;
 
-                // If it is null, return null
-                if (workItemList == null)
+                if (request.userIdToGetWorkItem == 0)
                 {
-                    return null;
+                    // Get list of work items from the table
+                    workItems = await _databaseContext.WorkItems
+                        .Include(workItem => workItem.Creator)
+                        .ToListAsync();
+                } else
+                {
+                    workItems = await _databaseContext.WorkItems
+                        .Include(workItem => workItem.Creator)
+                        .Where(workItem => workItem.CreatorId == request.userIdToGetWorkItem)
+                        .ToListAsync();
                 }
 
                 // Return list work item view models
-                return workItemList;
+                return workItems;
             }
         }
     }
