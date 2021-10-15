@@ -4,7 +4,7 @@ using Application.Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Application.Features.WorkItemFeatures
+namespace Application.Features.Command.AuthCommands
 {
     public class DeleteWorkItem : IRequest<int>
     {

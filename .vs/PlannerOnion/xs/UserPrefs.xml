@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{2D7D63B6-A3AA-4618-AE35-3EC34C08D5C4}|Default">
   <MonoDevelop.Ide.ItemProperties.PlannerOnion PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Application/Features/AuthFeatures/ResetPassword.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PlannerOnion/Controllers/v1/AuthController.cs">
     <Files>
-      <File FileName="PlannerOnion/Controllers/v1/AuthController.cs" Line="133" Column="48" NotebookId="1" />
-      <File FileName="PlannerOnion/ViewModels/ResetPasswordViewModel.cs" Line="9" Column="19" NotebookId="1" />
-      <File FileName="Application/Features/AuthFeatures/SendPasswordResetTokenEmail.cs" Line="42" Column="14" NotebookId="1" />
+      <File FileName="Application/Features/Command/AuthCommands/ResetPassword.cs" Line="6" Column="37" />
+      <File FileName="Application/Features/Command/AuthCommands/SendPasswordResetTokenEmail.cs" Line="12" Column="52" />
+      <File FileName="Application/Features/Command/AuthCommands/SignIn.cs" Line="9" Column="52" />
+      <File FileName="Application/Features/Command/AuthCommands/SignOut.cs" Line="7" Column="52" />
+      <File FileName="Application/Features/Command/AuthCommands/SignUp.cs" Line="10" Column="2" />
+      <File FileName="PlannerOnion/Controllers/v1/AuthController.cs" Line="4" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,10 +15,12 @@
           <Node name="PlannerOnion" expanded="True">
             <Node name="Application" expanded="True">
               <Node name="Features" expanded="True">
-                <Node name="AuthFeatures" expanded="True">
-                  <Node name="ResetPassword.cs" selected="True" />
+                <Node name="Command" expanded="True">
+                  <Node name="AuthCommands" expanded="True" />
                 </Node>
-                <Node name="WorkItemFeatures" expanded="True" />
+                <Node name="Query" expanded="True">
+                  <Node name="WorkItemQueries" expanded="True" />
+                </Node>
               </Node>
               <Node name="Interfaces" expanded="True" />
               <Node name="Services" expanded="True" />
@@ -28,7 +33,9 @@
             </Node>
             <Node name="PlannerOnion" expanded="True">
               <Node name="Controllers" expanded="True">
-                <Node name="v1" expanded="True" />
+                <Node name="v1" expanded="True">
+                  <Node name="AuthController.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="MappingConfig" expanded="True" />
               <Node name="ViewModels" expanded="True" />

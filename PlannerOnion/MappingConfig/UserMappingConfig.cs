@@ -1,5 +1,5 @@
 ﻿using System;
-using Application.Features.AuthFeatures;
+using Application.Features.Command.AuthCommands;
 using AutoMapper;
 using Domain.Entities;
 using PlannerOnion.ViewModels;

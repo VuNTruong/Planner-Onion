@@ -17,10 +17,14 @@
     <None Remove="Features\WorkItem\" />
     <None Remove="Microsoft.AspNetCore.Identity" />
     <None Remove="Microsoft.AspNetCore.Mvc.Core" />
-    <None Remove="Features\AuthFeatures\" />
     <None Remove="Services\" />
     <None Remove="MailKit" />
     <None Remove="Microsoft.AspNetCore.Identity.UI" />
+    <None Remove="Features\Command\" />
+    <None Remove="Features\Query\" />
+    <None Remove="Features\Command\WorkItemFeatures\" />
+    <None Remove="Features\Command\AuthCommands\" />
+    <None Remove="Features\Query\AuthFeatures\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
@@ -38,7 +42,11 @@
 
     <Folder Include="Interfaces\" />
     <Folder Include="Features\" />
-    <Folder Include="Features\AuthFeatures\" />
     <Folder Include="Services\" />
+    <Folder Include="Features\Command\" />
+    <Folder Include="Features\Query\" />
+    <Folder Include="Features\Command\WorkItemCommands\" />
+    <Folder Include="Features\Command\AuthCommands\" />
+    <Folder Include="Features\Query\WorkItemQueries\" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
 using Application.Interfaces;
 using Domain.Entities;
@@ -7,7 +6,7 @@ using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace Application.Features.AuthFeatures
+namespace Application.Features.Command.AuthCommands
 {
     public class ResetPassword : IRequest<string>
     {

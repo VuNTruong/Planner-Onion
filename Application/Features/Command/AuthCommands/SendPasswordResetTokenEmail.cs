@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
-namespace Application.Features.AuthFeatures
+namespace Application.Features.Command.AuthCommands
 {
     public class SendPasswordResetTokenEmail : IRequest<string>
     {

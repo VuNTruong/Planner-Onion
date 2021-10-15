@@ -4,7 +4,7 @@ using Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 
-namespace Application.Features.AuthFeatures
+namespace Application.Features.Command.AuthCommands
 {
     public class SignOut : IRequest<string>
     {

@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Application.Features.AuthFeatures;
 using PlannerOnion.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using Application.Interfaces;
+using Application.Features.Command.AuthCommands;
 
 namespace PlannerOnion.Controllers.v1
 {

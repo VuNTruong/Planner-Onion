@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Application.Features.WorkItemFeatures;
+using Application.Features.Command.AuthCommands;
+using Application.Features.Query.WorkItemQueries;
 using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;

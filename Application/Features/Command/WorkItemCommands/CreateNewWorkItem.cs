@@ -4,7 +4,7 @@ using Application.Interfaces;
 using Domain.Entities;
 using MediatR;
 
-namespace Application.Features.WorkItemFeatures
+namespace Application.Features.Command.AuthCommands
 {
     public class CreateNewWorkItem : IRequest<WorkItem>
     {

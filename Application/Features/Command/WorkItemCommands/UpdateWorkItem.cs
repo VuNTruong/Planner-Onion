@@ -5,7 +5,7 @@ using Domain.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Application.Features.WorkItemFeatures
+namespace Application.Features.Command.AuthCommands
 {
     public class UpdateWorkItem : IRequest<WorkItem>
     {

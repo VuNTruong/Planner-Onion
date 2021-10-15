@@ -7,7 +7,7 @@ using Application.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
-namespace Application.Features.WorkItemFeatures
+namespace Application.Features.Query.WorkItemQueries
 {
     public class GetAllWorkItems : IRequest<IEnumerable<WorkItem>>
     {
